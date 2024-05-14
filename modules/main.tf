@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.region
+}
 # Define OpenSearch domain
 resource "aws_opensearch_domain" "opensearch" {
   domain_name    = var.domain_name
